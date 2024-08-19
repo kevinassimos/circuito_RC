@@ -76,7 +76,6 @@ class CircuitoRCApp(QWidget):
         if file_path:  # Verifique se o caminho foi definido corretamente
             # Dados que serão salvos
             headers = ["Tempo (s)", "Tensão (V)", "Corrente (A)"]
-            print(self.t)
             rows = list(zip(self.t, self.Vt, self.It))
 
             # Escrevendo os dados no arquivo CSV
